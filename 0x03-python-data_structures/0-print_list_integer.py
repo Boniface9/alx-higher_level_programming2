@@ -1,8 +1,18 @@
+#!/usr/bin/python3
 def print_list_integer(my_list=[]):
-    for number in my_list:
-        print("{}".format(number))
+    """
+    Print a list of integers
+    ...
 
-# Test the function with the given example
-my_list = [1, 2, 3, 4, 5]
-print_list_integer(my_list)
+    Parameters
+    ----------
+    my_list : list optional
+        The list of integers
+
+    Return:
+        None
+    """
+
+    for element in my_list:
+        print("{:d}".format(element))
 
