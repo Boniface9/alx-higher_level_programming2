@@ -1,15 +1,22 @@
 def element_at(my_list, idx):
     """
-    Retrieves an element from a list at the given index.
+    Retrieves an element at a given index
+    ...
 
-    Args:
-        my_list (list): The list from which to retrieve the element.
-        idx (int): The index of the element to retrieve.
+    Parameters
+    ----------
+    my_list : list
+        The list of integers
+    idx : integer
+        The given index
 
-    Returns:
-        int: The element at the specified index, or None if index is out of range.
+    Return:
+        The element when found
+        None if the index is negative
+        None if the index is larger than the list length
     """
-    if idx < 0 or idx >= len(my_list):
-        return None
-    return my_list[idx]
 
+    if idx < 0 or idx > (len(my_list) - 1):
+        return None
+    else:
+        return my_list[idx]
